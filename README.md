@@ -2,7 +2,7 @@
 Simpler IO features for C# console applications.
 
 # Features
-Coolio includes a few features, listed below:
+Coolio's methods are listed below:
 
 ## print(message, type)
 print prints text to the screen using ``` Console.WriteLine ``` and ``` Console.Write ```. 
