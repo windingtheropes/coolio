@@ -41,11 +41,12 @@ namespace coolio
             // Import coolio
             coolio coolio = new coolio();
             
-            //Print "Hello"
+            // Print "Hello"
             coolio.print("Hello", 0);
             
-            //Ask for input with the prompt "What is your name?"
+            // Ask for input with the prompt "What is your name?"
             string name = coolio.input("What is your name? ", 0);
+            // Print the input
             coolio.print(name, 0);
         }
     }
