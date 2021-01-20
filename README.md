@@ -22,8 +22,8 @@ The second argument {type} is the way that the text is displayed and input is re
 0 = keeps input on the same line as the message
 1 = puts the input below the message
 
-# Use
-Just download the file [coolio.cs](https://github.com/windingtheropes/coolio/blob/main/coolio.cs "coolio.cs") and add it into your project. 
+# Using Coolio
+Just download the file [coolio.cs](https://github.com/windingtheropes/coolio/blob/main/coolio.cs "coolio.cs") and add it into your project.\
 Coolio can be simply implemented like in the code snippet below.
 
 ```
