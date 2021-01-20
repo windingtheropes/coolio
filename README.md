@@ -2,7 +2,7 @@
 Simpler IO features for C# console applications.
 
 # Features
-Coolio includes a few features, based off the two base concepts:
+Coolio includes a few features, listed below:
 
 ## print(message, type)
 print prints text to the screen using ``` Console.WriteLine ``` and ``` Console.Write ```. 
@@ -21,6 +21,8 @@ The second argument {type} is the way that the text is displayed and input is re
 
 0 = keeps input on the same line as the message
 1 = puts the input below the message
+
+input will return the input as a string.
 
 # Using Coolio
 Just download the [source code](https://github.com/windingtheropes/coolio/archive/main.zip "main.zip") and add coolio.cs into your project.\
