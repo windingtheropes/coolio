@@ -23,7 +23,7 @@ The second argument {type} is the way that the text is displayed and input is re
 1 = puts the input below the message
 
 # Using Coolio
-Just download the file [coolio.cs](https://github.com/windingtheropes/coolio/blob/main/coolio.cs "coolio.cs") and add it into your project.\
+Just download the [source code](https://github.com/windingtheropes/coolio/archive/main.zip "main.zip") and add coolio.cs into your project.\
 Coolio can be simply implemented like in the code snippet below.
 
 ```
