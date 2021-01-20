@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+# Coolio
+Simpler IO features for C# console applications.
 
-You can use the [editor on GitHub](https://github.com/windingtheropes/coolio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Features
+Coolio's methods are listed below:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## print(message, type)
+print prints text to the screen using ``` Console.WriteLine ``` and ``` Console.Write ```. 
 
-### Markdown
+The first argument {message} is the message you want to be displayed. Message must be a string.\
+The second argument {type} is the way that the text is displayed. Types and their uses are listed below:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+0 = automatically jumps to the next line\
+1 = require keypress to return to next line
+       
+## input(message, type)
+input prints a message using ``` Console.WriteLine ``` and ``` Console.Write ```, and reads input using ``` Console.ReadLine ```.
 
-```markdown
-Syntax highlighted code block
+The first argument {message} is the message you want to be displayed, this will be presented before the input. Message must be a string.\
+The second argument {type} is the way that the text is displayed and input is requested. Types and their uses are listed below:
 
-# Header 1
-## Header 2
-### Header 3
+0 = keeps input on the same line as the message\
+1 = puts the input below the message
 
-- Bulleted
-- List
+input will return the input as a string.
 
-1. Numbered
-2. List
+# Using Coolio
+Just download the [source code](https://github.com/windingtheropes/coolio/archive/main.zip "main.zip") and add coolio.cs into your project.\
+Coolio can be simply implemented like in the code snippet below.
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
+using System;
+using coolio;
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+namespace coolio
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Import coolio
+            coolio coolio = new coolio();
+            
+            // Print "Hello"
+            coolio.print("Hello", 0);
+            
+            // Ask for input with the prompt "What is your name?"
+            string name = coolio.input("What is your name? ", 0);
+            // Print the input
+            coolio.print(name, 0);
+        }
+    }
+}
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/windingtheropes/coolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```
