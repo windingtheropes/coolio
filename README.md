@@ -23,7 +23,7 @@ The second argument {type} is the way that the text is displayed and input is re
 1 = puts the input below the message
 
 # Use
-Just download the file (https://github.com/windingtheropes/coolio/blob/main/coolio.cs "coolio.cs")
+Just download the file [coolio.cs](https://github.com/windingtheropes/coolio/blob/main/coolio.cs "coolio.cs") and add it into your project. 
 Coolio can be simply implemented like in the code snippet below.
 
 ```
@@ -38,9 +38,11 @@ namespace coolio
         {
             // Import coolio
             coolio coolio = new coolio();
-
+            
+            //Print "Hello"
             coolio.print("Hello", 0);
-
+            
+            //Ask for input with the prompt "What is your name?"
             string name = coolio.input("What is your name? ", 0);
             coolio.print(name, 0);
         }
