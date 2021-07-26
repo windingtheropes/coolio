@@ -8,7 +8,7 @@ namespace coolio
     class coolio
     {
      
-        public void print(string message, int type)
+        public void print(string message, int type = 0)
         {
             if (type == 0)
             {
@@ -26,7 +26,7 @@ namespace coolio
 
         }
      
-        public string input(string message, int type)
+        public string input(string message, int type = 0)
         {
             if (type == 0)
             {
