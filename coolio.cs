@@ -10,38 +10,39 @@ namespace coolio
      
         public void print(string message, int type = 0)
         {
-            if (type == 0)
+            switch(type)
             {
-                Console.WriteLine(message);
+                case 0:
+                    Console.WriteLine(message);
+                    break;
+                case 1:
+                    Console.Write(message);
+                    Console.ReadKey();
+                    break;
+                default:
+                    Console.WriteLine("Error");
+                    break;
             }
-            else if (type == 1)
-            {
-                Console.Write(message);
-                Console.ReadKey();
-            }
-            else
-            {
-                Console.WriteLine("Error");
-            }
+           
 
         }
      
         public string input(string message, int type = 0)
         {
-            if (type == 0)
+            switch(type)
             {
-                Console.Write(message);
-                return Console.ReadLine().ToString();
-            }
-            else if (type == 1)
-            {
-                Console.WriteLine(message);
-                return Console.ReadLine().ToString();
-            }
-            else
-            {
-                Console.WriteLine("Error");
-                return null;
+                case 0:
+                    Console.Write(message);
+                    return Console.ReadLine().ToString();
+                    break;
+                case 1:
+                    Console.WriteLine(message);
+                    return Console.ReadLine().ToString();
+                    break;
+                default:
+                    Console.WriteLine("Error");
+                    return null;
+                    break;
             }
         }
 
