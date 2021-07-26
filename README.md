@@ -42,12 +42,12 @@ namespace coolio
             coolio coolio = new coolio();
             
             // Print "Hello"
-            coolio.print("Hello", 0);
+            coolio.print("Hello");
             
             // Ask for input with the prompt "What is your name?"
-            string name = coolio.input("What is your name? ", 0);
+            string name = coolio.input("What is your name? ");
             // Print the input
-            coolio.print(name, 0);
+            coolio.print(name);
         }
     }
 }
