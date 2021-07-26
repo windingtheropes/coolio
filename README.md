@@ -10,7 +10,7 @@ print prints text to the screen using ``` Console.WriteLine ``` and ``` Console.
 The first argument {message} is the message you want to be displayed. Message must be a string.\
 The second argument {type} is the way that the text is displayed. Types and their uses are listed below:
 
-0 = automatically jumps to the next line\
+0 = automatically jumps to the next line (default)\
 1 = require keypress to return to next line
        
 ## input(message, type)
@@ -19,7 +19,7 @@ input prints a message using ``` Console.WriteLine ``` and ``` Console.Write ```
 The first argument {message} is the message you want to be displayed, this will be presented before the input. Message must be a string.\
 The second argument {type} is the way that the text is displayed and input is requested. Types and their uses are listed below:
 
-0 = keeps input on the same line as the message\
+0 = keeps input on the same line as the message (default)\
 1 = puts the input below the message
 
 input will return the input as a string.
@@ -42,12 +42,12 @@ namespace coolio
             coolio coolio = new coolio();
             
             // Print "Hello"
-            coolio.print("Hello", 0);
+            coolio.print("Hello");
             
             // Ask for input with the prompt "What is your name?"
-            string name = coolio.input("What is your name? ", 0);
+            string name = coolio.input("What is your name? ");
             // Print the input
-            coolio.print(name, 0);
+            coolio.print(name);
         }
     }
 }
